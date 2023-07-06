@@ -1,3 +1,4 @@
+using Easy_Application.DTOs;
 using Easy_Application.Models;
 using Easy_Application.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,12 @@ namespace Easy_Application.Controllers
         public EmployeesController(IEmployeeService employeeService)
         {
             _employeeService = employeeService;
+        }
+        
+        [HttpGet]
+        public ActionResult<List<EmployeeDto>> GetEmployees()
+        {
+            return Ok(_employeeService.GetAllEmployees());
         }
 
         [HttpGet("{id:int}")]

@@ -11,33 +11,40 @@ public interface IEmployeeRepository
 
     void Update(Employee employee);
     void Delete(Employee employee);
+    IEnumerable<Employee> GetAllEmployees();
+
 }
 
 public class EmployeeRepository : IEmployeeRepository
 {
-    private readonly ApplicationDbContext context;
+    private readonly ApplicationDbContext _context;
 
     public EmployeeRepository(ApplicationDbContext context)
     {
-        this.context = context;
+        _context = context;
     }
 
     public Employee? getById(int id)
     {
-        return context.Employees.Find(id);
+        return _context.Employees.Find(id);
+    }
+    
+    public IEnumerable<Employee> GetAllEmployees()
+    {
+        return _context.Employees.ToList();
     }
 
     public void Update(Employee employee)
     {
-        context.Employees.Update(employee);
-        context.SaveChanges();
+        _context.Employees.Update(employee);
+        _context.SaveChanges();
     }
 
     
     public void Delete(Employee employee)
     {
-        context.Employees.Remove(employee);
-        context.SaveChanges();
+        _context.Employees.Remove(employee);
+        _context.SaveChanges();
     }
 
 }
