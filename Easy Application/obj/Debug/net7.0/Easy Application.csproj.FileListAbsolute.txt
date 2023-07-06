@@ -1,0 +1,33 @@
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/appsettings.Development.json
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/appsettings.json
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Easy Application
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Easy Application.deps.json
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Easy Application.runtimeconfig.json
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Easy Application.dll
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Easy Application.pdb
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.csproj.AssemblyReference.cache
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.AssemblyInfoInputs.cache
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.AssemblyInfo.cs
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.csproj.CoreCompileInputs.cache
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.MvcApplicationPartsAssemblyInfo.cs
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.MvcApplicationPartsAssemblyInfo.cache
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/staticwebassets/msbuild.Easy Application.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/staticwebassets/msbuild.build.Easy Application.props
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Easy Application.props
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Easy Application.props
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/staticwebassets.build.json
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/staticwebassets.development.json
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/scopedcss/bundle/Easy Application.styles.css
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.csproj.CopyComplete
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.dll
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/refint/Easy Application.dll
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.pdb
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/Easy Application.genruntimeconfig.cache
+/Users/nobeen/RiderProjects/Easy Application/Easy Application/obj/Debug/net7.0/ref/Easy Application.dll
