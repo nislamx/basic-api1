@@ -14,7 +14,7 @@ namespace Easy_Application.Controllers
             _employeeService = employeeService;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public ActionResult<Employee> GetEmployeeById(int id)
         {
             if (id <= 0)
@@ -25,7 +25,7 @@ namespace Easy_Application.Controllers
             return Ok(_employeeService.GetById(id));
         }
         
-        [HttpPut("Charles/{id}")]
+        [HttpPut("Charles/{id:int}")]
         public ActionResult<Employee> UpdateCharles(int id)
         {
             Employee myEmployee = _employeeService.GetById(id);
@@ -38,7 +38,7 @@ namespace Easy_Application.Controllers
             return NotFound();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public ActionResult DeleteEmployee(int id)
         {
             Employee myEmployee = _employeeService.GetById(id);
