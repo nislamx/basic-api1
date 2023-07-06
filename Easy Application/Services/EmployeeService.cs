@@ -2,11 +2,13 @@ using Easy_Application.Exceptions;
 using Easy_Application.Models;
 using Easy_Application.Repositories;
 
+namespace Easy_Application.Services;
+
 public interface IEmployeeService{
 
-Employee GetById(int id);
-void UpdateName(int id, string newName);
-void DeleteById(int id);
+    Employee GetById(int id);
+    void UpdateName(int id, string newName);
+    void DeleteById(int id);
 }
 
 public class EmployeeService : IEmployeeService

@@ -1,6 +1,8 @@
 using Easy_Application.Database;
+using Easy_Application.Models;
 using Easy_Application.Profiles;
 using Easy_Application.Repositories;
+using Easy_Application.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,3 +36,15 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+static void SeedDatabase(WebApplication app)
+{
+    using var scope = app.Services.CreateScope();
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+    // Add some dummy employees.
+    context.Employees.Add(new Employee { FirstName = "John", LastName = "Doe", Position = "Developer" });
+    context.Employees.Add(new Employee { FirstName = "Jane", LastName = "Doe", Position = "Designer" });
+
+    context.SaveChanges();
+}

@@ -5,10 +5,11 @@ namespace Easy_Application.Database;
 
 public class ApplicationDbContext : DbContext
 {
-   public DbSet<Employee> Employees { get; set; }
-      
-   protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+   
+   public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+      : base(options)
    {
-      optionsBuilder.UseInMemoryDatabase("EmployeeDb");
    }
+   public DbSet<Employee> Employees { get; set; }
+   
 }
