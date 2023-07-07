@@ -23,6 +23,9 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+SeedDatabase(app);
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -43,8 +46,8 @@ static void SeedDatabase(WebApplication app)
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
     // Add some dummy employees.
-    context.Employees.Add(new Employee { FirstName = "John", LastName = "Doe", Position = "Developer" });
-    context.Employees.Add(new Employee { FirstName = "Jane", LastName = "Doe", Position = "Designer" });
+    context.Employees.Add(new Employee { Id= 1, FirstName = "John", LastName = "Doe", Position = "Developer" });
+    context.Employees.Add(new Employee { Id= 2, FirstName = "Jane", LastName = "Doe", Position = "Designer" });
 
     context.SaveChanges();
 }
