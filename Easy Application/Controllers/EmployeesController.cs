@@ -1,4 +1,5 @@
 using Easy_Application.DTOs;
+using Easy_Application.Exceptions;
 using Easy_Application.Models;
 using Easy_Application.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -23,6 +24,8 @@ namespace Easy_Application.Controllers
         }
 
         [HttpGet("{id:int}")]
+        
+        
         public ActionResult<Employee> GetEmployeeById(int id)
         {
             if (id <= 0)
@@ -30,20 +33,37 @@ namespace Easy_Application.Controllers
                 return NotFound();
             }
 
-            return Ok(_employeeService.GetById(id));
+            try
+            {
+                return Ok(_employeeService.GetById(id));
+            }
+            catch (NoEmployeeException e)
+            {
+                Console.WriteLine(e);
+                return NotFound();
+            }
+
+            
         }
         
         [HttpPut("Charles/{id:int}")]
         public ActionResult<Employee> UpdateCharles(int id)
         {
-            Employee myEmployee = _employeeService.GetById(id);
-            
-            if (myEmployee.Position == "Senior Charles")
+            try
             {
-                _employeeService.UpdateName(id, "Charles Macgoo");
-                return Ok(myEmployee);
+                Employee myEmployee = _employeeService.GetById(id);
+                if (myEmployee.Position == "Senior Charles")
+                {
+                    _employeeService.UpdateName(id, "Charles Macgoo");
+                    return Ok(myEmployee);
+                }
+                return NotFound();
             }
-            return NotFound();
+            catch (NoEmployeeException e)
+            {
+                Console.WriteLine(e);
+                return NotFound();
+            }
         }
 
         [HttpDelete("{id:int}")]
